@@ -1,0 +1,8 @@
+{
+  "appId": "com.coopFitness.app",
+  "appName": "--web-dir",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}
