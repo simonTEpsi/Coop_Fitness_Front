@@ -6,13 +6,13 @@ pipeline {
    stages {
       stage('lint') {
          steps {
-            sh 'npm install --silent'
+            bat 'npm install --silent'
          }
       }
 
       stage('tests') {
          steps {
-            sh 'npm test'
+            bat 'npm test'
          }
       }
 
