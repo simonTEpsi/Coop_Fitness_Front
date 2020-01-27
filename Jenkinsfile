@@ -10,7 +10,7 @@ pipeline {
          }
       }
 
-      stage('lint') {
+      stage('tests') {
          steps {
             sh 'npm test'
          }
