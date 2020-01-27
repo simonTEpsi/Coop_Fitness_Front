@@ -23,8 +23,8 @@ pipeline {
       }
       stage('Android Build') {
          steps {
-            sh 'npx cap sync',
-            sh ' cd android',
+            sh 'npx cap sync'
+            sh ' cd android'
             sh './gradlew assembleDebug'
          }
       }
