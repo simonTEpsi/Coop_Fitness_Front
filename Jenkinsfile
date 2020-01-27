@@ -1,31 +1,28 @@
 pipeline {
    agent any
-      environment {
-         PATH='/usr/local/bin:/usr/bin:/bin'
-      }
    stages {
       stage('lint') {
          steps {
-            sh 'npm install --silent'
+            bat 'npm install --silent'
          }
       }
 
-      stage('lint') {
+      stage('tests') {
          steps {
-            sh 'npm test'
+            bat 'npm test'
          }
       }
 
       stage('Web Build') {
          steps {
-            sh 'ionic build'
+            bat 'ionic build'
          }
       }
       stage('Android Build') {
          steps {
-            sh 'npx cap sync'
-            sh ' cd android'
-            sh './gradlew assembleDebug'
+            bat 'npx cap sync'
+            bat ' cd android'
+            bat './gradlew assembleDebug'
          }
       }
    }
