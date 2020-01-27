@@ -6,7 +6,7 @@ pipeline {
    stages {
       stage('lint') {
          steps {
-            sh 'npm install --silent'
+            bat 'npm install --silent'
          }
       }
 
