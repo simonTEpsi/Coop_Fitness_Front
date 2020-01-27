@@ -1,7 +1,7 @@
 pipeline {
    agent any
       environment {
-         PATH='C:/Program Files/Git/bin'
+         PATH='C:/Program Files/Git/usr/bin'
       }
    stages {
       stage('lint') {
