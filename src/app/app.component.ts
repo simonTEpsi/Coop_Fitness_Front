@@ -17,9 +17,19 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'List',
-      url: '/list',
+      title: 'Réseaux',
+      url: '/network',
       icon: 'list'
+    },
+    {
+      title: 'Evenements',
+      url: '/event',
+      icon: 'football'
+    },
+    {
+      title: 'Santé',
+      url: '/health',
+      icon: 'logo-apple'
     }
   ];
 
