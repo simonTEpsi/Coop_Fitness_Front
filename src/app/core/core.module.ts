@@ -1,4 +1,4 @@
-import { RegisterService } from "./services/register.service";
+import { RegisterService } from "./services/login/register.service";
 import { SharedModule } from '../shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';

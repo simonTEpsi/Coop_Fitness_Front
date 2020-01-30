@@ -12,12 +12,13 @@ export class RegisterService {
     this.registerForm = this.registerFormSubject.asObservable();
   }
 
-  public setCurrentfilterFormValue(filterForm: FormGroup): void {
-    this.registerFormSubject.next(filterForm);
+  public setCurrentRegisterFormValue(loginForm: FormGroup): void {
+    this.registerFormSubject.next(loginForm);
   }
 
   private initRegisterForm(): FormGroup {
     const form: FormGroup = this.formBuilder.group({
+      username: '',
       name: '',
       firstName: '',
       address: '',

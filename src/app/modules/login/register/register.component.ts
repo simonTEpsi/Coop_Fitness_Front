@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FormGroup } from '@angular/forms';
-import { RegisterService } from '../../../core/services/register.service';
+import { RegisterService } from '../../../core/services/login/register.service';
 
 
 @Component({

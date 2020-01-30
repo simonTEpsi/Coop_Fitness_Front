@@ -5,6 +5,10 @@
 </ion-header>
  
 <ion-content padding>
-  <ion-button (click)="login()" expand="block">Login</ion-button>
+  <form id="register" [formGroup]="loginForm">
+    <input id="username" type="text" placeholder="Username" formControlName="username">
+    <input id="password" type="password" placeholder="Password" formControlName="password">
+    <ion-button type="submit" (click)="login()"> Valider</ion-button>
+  </form>
   <ion-button expand="block" color="secondary" routerLink="/login/register" routerDirection="forward">Register</ion-button>
 </ion-content>

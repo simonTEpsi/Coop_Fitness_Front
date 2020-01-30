@@ -38,16 +38,16 @@ export class AppComponent {
   initializeApp() {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
-      this.splashScreen.hide();
- 
+      this.splashScreen.hide();      
       this.authenticationService.authenticationState.subscribe(state => {
-        if (!state) {
-          this.router.navigate(['members', 'home']);
+        if (state) {
+          console.log('auth ok');
+          this.router.navigate(['home']);
         } else {
+          console.log('auth ko');
           this.router.navigate(['login']);
         }
       });
- 
     });
   }
 }
