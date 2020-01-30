@@ -1,0 +1,20 @@
+[
+    {
+        "id": "tristanA",
+        "name": "Alfred",
+        "firstName": "Tristan",
+        "address": "epsi",
+        "email": "tristan.alfred@epsi.fr",
+        "dateInscription": "29/01/2020",
+        "password": "tristanlp"
+    },
+    {
+        "id": "simonT",
+        "name": "Simon",
+        "firstName": "Tassaert",
+        "address": "epsi",
+        "email": "simon.tassaert@epsi.fr",
+        "dateInscription": "29/01/2020",
+        "password": "simonlp"
+    }
+]
