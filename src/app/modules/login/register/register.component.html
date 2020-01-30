@@ -1,0 +1,13 @@
+<ion-header>
+    Inscription
+</ion-header>
+<ion-content>
+    <form id="register" [formGroup]="registerForm">
+        <input id="name" type="text" placeholder="Nom" formControlName="name">
+        <input id="firstName" type="text" placeholder="Prénom" formControlName="firstName">
+        <input id="email" type="text" placeholder="Email" formControlName="email">
+        <input id="password" type="text" placeholder="Mdp" formControlName="password">
+        <input id="address" type="text" placeholder="Adresse" formControlName="address">
+        <ion-button type="submit" (click)="onValid()">S'inscrire</ion-button>
+    </form>
+</ion-content>
