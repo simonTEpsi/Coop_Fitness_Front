@@ -15,7 +15,7 @@ pipeline {
 
       stage('Web Build') {
          steps {
-            bat 'ionic build'
+            bat 'npm build'
          }
       }
       stage('Android Build') {
