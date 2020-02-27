@@ -15,15 +15,16 @@ pipeline {
 
       stage('Web Build') {
          steps {
-            bat 'ionic build'
+            bat 'npm run build'
          }
       }
+      /*
       stage('Android Build') {
          steps {
             bat 'npx cap sync'
             bat ' cd android'
             bat './gradlew assembleDebug'
          }
-      }
+      }*/
    }
 }
