@@ -15,15 +15,16 @@ pipeline {
 
       stage('Web Build') {
          steps {
-            bat 'ionic build'
+            bat 'npm run build --release'
          }
       }
-      stage('Android Build') {
+      
+      stage('Publish') {
          steps {
-            bat 'npx cap sync'
-            bat ' cd android'
-            bat './gradlew assembleDebug'
+            bat 'npm login --registry=http://localhost:8087/repository/CoopFitness/'
+            bat 'npm publish'
          }
       }
+      
    }
 }
